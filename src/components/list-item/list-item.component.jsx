@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 
 import "./list-item.styles.scss";
 
-import { CardItem } from "./list-item.styles";
+import { Card, Tag } from "antd";
+import MONSTER_TYPES from "../../helper/monster-types";
 
 const ListItem = (props) => {
   const { name, index, url } = props.monster;
@@ -21,13 +22,14 @@ const ListItem = (props) => {
   }, [url, monsterDetails.type]);
 
   return (
-    <CardItem monsterType={type}>
+    <Card className="item">
       <img
         alt="monster"
         src={`https://robohash.org/${index}.png?set=set4&size=100x100`}
       />
+      <Tag color={MONSTER_TYPES[type]}>{type}</Tag>
       {name}
-    </CardItem>
+    </Card>
   );
 };
 

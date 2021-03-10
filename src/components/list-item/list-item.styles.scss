@@ -1,3 +1,19 @@
+.ant-card.item {
+  border-radius: 25px;
+}
+
+.ant-card-body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .ant-tag {
+    border-radius: 25px;
+    margin-right: 0;
+  }
+}
+
 img {
   height: 100px;
   width: 100px;
