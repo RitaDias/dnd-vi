@@ -9,7 +9,7 @@ const MonsterList = () => {
 
   useEffect(() => {
     async function getMonsters() {
-      let response = await fetch("https://www.dnd5eapi.co/api/monsters");
+      let response = await fetch("https://api.open5e.com/monsters/");
       response = await response.json();
       setMonsterList(response.results);
     }
