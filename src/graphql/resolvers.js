@@ -17,6 +17,12 @@ const GET_SHOW_DETAIL_MODAL = gql`
   }
 `;
 
+const GET_CURRENT_OPEN_ITEM = gql`
+  {
+    currentOpenItem @client
+  }
+`;
+
 export const resolvers = {
   Mutation: {
     toggleShowDetailModal: (_root, _args, { cache }) => {
@@ -30,6 +36,14 @@ export const resolvers = {
       });
 
       return !showDetailModal;
+    },
+    updateCurrentOpenItem: (_root, { item }, { cache }) => {
+      cache.writeQuery({
+        query: GET_CURRENT_OPEN_ITEM,
+        data: { currentOpenItem: item }
+      });
+
+      return item;
     }
   }
 };

@@ -27,9 +27,16 @@ const GET_SHOW_DETAIL_MODAL = gql`
   }
 `;
 
+const GET_CURRENT_OPEN_ITEM = gql`
+  {
+    currentOpenItem @client
+  }
+`;
+
 const MonsterListcontainer = () => {
   const { loading, error, data } = useQuery(GET_MONSTER_DETAILS);
   const abc = useQuery(GET_SHOW_DETAIL_MODAL);
+  const abc1 = useQuery(GET_CURRENT_OPEN_ITEM);
   const [toggleShowDetailModal] = useMutation(TOGGLE_SHOW_DETAIL_MODAL);
 
   if (loading) return "loading";
@@ -39,6 +46,7 @@ const MonsterListcontainer = () => {
     <MonsterList
       monsterList={data.monsters}
       showDetailModal={abc.data.showDetailModal}
+      currentOpenItem={abc1.data.currentOpenItem}
       toggleShowDetailModal={toggleShowDetailModal}
     />
   );

@@ -6,6 +6,7 @@ import "./monster-list.styles.scss";
 const MonsterList = ({
   monsterList,
   showDetailModal,
+  currentOpenItem,
   toggleShowDetailModal
 }) => {
   return (
@@ -20,6 +21,7 @@ const MonsterList = ({
         onCancel={toggleShowDetailModal}
         footer={null}
       >
+        {currentOpenItem.name}
         <p>Some contents...</p>
         <p>Some contents...</p>
         <p>Some contents...</p>
