@@ -17,8 +17,8 @@ const MonsterList = ({
       <Modal
         title="Basic Modal"
         visible={showDetailModal}
-        onOk={toggleShowDetailModal}
         onCancel={toggleShowDetailModal}
+        footer={null}
       >
         <p>Some contents...</p>
         <p>Some contents...</p>
