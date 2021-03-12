@@ -1,4 +1,4 @@
-import ListItem from "../list-item/list-item.component";
+import { default as ListItem } from "../list-item/list-item.container";
 
 import "./monster-list.styles.scss";
 

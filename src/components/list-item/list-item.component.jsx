@@ -3,11 +3,16 @@ import "./list-item.styles.scss";
 import { Card, Tag } from "antd";
 import MONSTER_TYPES from "../../helper/monster-types";
 
-const ListItem = (props) => {
-  const { name, type } = props.monster;
+const ListItem = ({ toggleShowDetailModal, ...otherProps }) => {
+  const { name, type } = otherProps.monster;
 
   return (
-    <Card className="item">
+    <Card
+      className="item"
+      onClick={() => {
+        toggleShowDetailModal();
+      }}
+    >
       <img
         alt="monster"
         src={`https://robohash.org/${name}.png?set=set4&size=100x100`}

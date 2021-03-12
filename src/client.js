@@ -15,3 +15,9 @@ export const client = new ApolloClient({
   typeDefs,
   resolvers
 });
+
+client.writeData({
+  data: {
+    showDetailModal: false
+  }
+});

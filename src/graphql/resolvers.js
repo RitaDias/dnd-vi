@@ -11,6 +11,25 @@ export const typeDefs = gql`
   }
 `;
 
+const GET_SHOW_DETAIL_MODAL = gql`
+  {
+    showDetailModal @client
+  }
+`;
+
 export const resolvers = {
-  Mutation: {}
+  Mutation: {
+    toggleShowDetailModal: (_root, _args, { cache }) => {
+      const { showDetailModal } = cache.readQuery({
+        query: GET_SHOW_DETAIL_MODAL
+      });
+
+      cache.writeQuery({
+        query: GET_SHOW_DETAIL_MODAL,
+        data: { showDetailModal: !showDetailModal }
+      });
+
+      return !showDetailModal;
+    }
+  }
 };
