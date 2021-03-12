@@ -12,6 +12,7 @@ const MONSTER_TYPES = {
   monstrosity: "#eb2f96",
   ooze: "#2f54eb",
   plant: "#52c41a",
+  "swarm-of-tiny-beasts": "#262626",
   undead: "#722ed1"
 };
 

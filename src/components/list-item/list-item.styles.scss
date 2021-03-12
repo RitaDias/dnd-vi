@@ -1,11 +1,14 @@
 .ant-card.item {
   border-radius: 25px;
+  height: 250px;
 }
 
 .ant-card-body {
   align-items: center;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: space-evenly;
 
   .ant-tag {
