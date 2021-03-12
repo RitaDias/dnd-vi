@@ -22,8 +22,8 @@ const ListItem = ({
         alt="monster"
         src={`https://robohash.org/${name}.png?set=set4&size=100x100`}
       />
-      <Tag color={MONSTER_TYPES[type]}>{type}</Tag>
       {name}
+      <Tag color={MONSTER_TYPES[type]}>{type}</Tag>
     </Card>
   );
 };
