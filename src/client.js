@@ -19,6 +19,6 @@ export const client = new ApolloClient({
 client.writeData({
   data: {
     showDetailModal: false,
-    currentOpenItem: {}
+    currentOpenItem: null
   }
 });

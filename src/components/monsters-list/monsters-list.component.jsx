@@ -1,31 +1,16 @@
 import { default as ListItem } from "../list-item/list-item.container";
-import { Modal } from "antd";
+import { default as DetailModal } from "../detail-modal/detail-modal.container";
 
 import "./monster-list.styles.scss";
 
-const MonsterList = ({
-  monsterList,
-  showDetailModal,
-  currentOpenItem,
-  toggleShowDetailModal
-}) => {
+const MonsterList = ({ monsterList, showDetailModal }) => {
   return (
     <div className="list">
       {monsterList.map((monster) => (
         <ListItem key={monster.index} monster={monster} />
       ))}
 
-      <Modal
-        title="Basic Modal"
-        visible={showDetailModal}
-        onCancel={toggleShowDetailModal}
-        footer={null}
-      >
-        {currentOpenItem.name}
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-      </Modal>
+      {showDetailModal ? <DetailModal /> : null}
     </div>
   );
 };
