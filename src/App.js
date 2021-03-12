@@ -1,12 +1,16 @@
 import "./App.css";
+import { default as MonsterList } from "./components/monsters-list/monster-list.container";
 
-import MonsterList from "./components/monsters-list/monsters-list.component";
+import { client } from "./client";
+import { ApolloProvider } from "@apollo/client";
 
 function App() {
   return (
-    <div className="App">
-      <MonsterList />
-    </div>
+    <ApolloProvider client={client}>
+      <div className="App">
+        <MonsterList />
+      </div>
+    </ApolloProvider>
   );
 }
 
