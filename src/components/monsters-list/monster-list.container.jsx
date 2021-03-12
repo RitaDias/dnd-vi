@@ -1,4 +1,4 @@
-import { useQuery, gql } from "@apollo/client";
+import { useQuery, useMutation, gql } from "@apollo/client";
 
 import MonsterList from "./monsters-list.component";
 
@@ -21,17 +21,28 @@ const GET_SHOW_DETAIL_MODAL = gql`
   }
 `;
 
+const TOGGLE_SHOW_DETAIL_MODAL = gql`
+  mutation ToggleShowDetailModal {
+    toggleShowDetailModal @client
+  }
+`;
+
 const MonsterListcontainer = () => {
   const { loading, error, data } = useQuery(GET_MONSTER_DETAILS);
-  const abc = useQuery(GET_SHOW_DETAIL_MODAL);
+  const {
+    data: { showDetailModal }
+  } = useQuery(GET_SHOW_DETAIL_MODAL);
+  const [toggleShowDetailModal] = useMutation(TOGGLE_SHOW_DETAIL_MODAL);
 
   if (loading) return "loading";
   if (error) return "an error occurred";
 
+  console.log(data);
   return (
     <MonsterList
       monsterList={data.monsters}
-      showDetailModal={abc.data.showDetailModal}
+      showDetailModal={showDetailModal}
+      toggleShowDetailModal={toggleShowDetailModal}
     />
   );
 };
