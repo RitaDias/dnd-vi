@@ -2,8 +2,9 @@ import "./list-item.styles.scss";
 
 import { useState } from "react";
 import { Card, Tag } from "antd";
-import MONSTER_TYPES from "../../helper/monster-types";
 import ModalContent from "../modal-content/modal-content.component";
+
+import MONSTER_TYPES from "../../helper/monster-types";
 
 import { Modal } from "antd";
 
@@ -28,7 +29,6 @@ const ListItem = ({ monster }) => {
       </Card>
 
       <Modal
-        title="Basic Modal"
         visible={showModal}
         onCancel={() => {
           setShowModal(!showModal);
