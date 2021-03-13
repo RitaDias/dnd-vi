@@ -37,7 +37,6 @@ const MonsterListcontainer = () => {
   if (loading) return "loading";
   if (error) return "an error occurred";
 
-  console.log(data);
   return (
     <MonsterList
       monsterList={data.monsters}
