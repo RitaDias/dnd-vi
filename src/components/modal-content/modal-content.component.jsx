@@ -1,11 +1,22 @@
 import SuggestionSection from "../suggestion-section/suggestion-section.component";
 
 const ModalContent = ({ currentOpenItem }) => {
-  const { name, damage_immunities } = currentOpenItem;
+  console.log(currentOpenItem);
+  const {
+    name,
+    damage_vulnerabilities,
+    damage_resistances,
+    damage_immunities
+  } = currentOpenItem;
 
   return (
     <div>
       {name}
+      <SuggestionSection
+        title="Vulnerabilities"
+        list={damage_vulnerabilities}
+      />
+      <SuggestionSection title="Resistances" list={damage_resistances} />
       <SuggestionSection title="Immunities" list={damage_immunities} />
     </div>
   );
