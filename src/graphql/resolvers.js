@@ -1,13 +1,16 @@
 import { gql } from "apollo-boost";
 
 export const typeDefs = gql`
-  extend type Monster {
-    index: String!
+  extend type DamageType {
     name: String!
-    type: String!
-    damage_immunities: [String]!
-    damage_resistances: [String]!
-    damage_vulnerabilities: [String]!
+  }
+
+  extend type Damage {
+    damage_type: DamageType
+  }
+
+  extend type Filter {
+    damage: Damage
   }
 `;
 

@@ -4,7 +4,7 @@ import MonsterList from "./monsters-list.component";
 
 const GET_MONSTER_DETAILS = gql`
   {
-    monsters {
+    monsters(limit: 300) {
       index
       name
       type

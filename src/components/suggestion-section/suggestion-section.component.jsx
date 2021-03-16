@@ -1,5 +1,6 @@
 import DAMAGE_TYPE from "../../helper/damage-type";
 import { Tag } from "antd";
+import SpellsSection from "../spells-section/spells-section.component";
 
 import "./suggestion-section.styles.scss";
 
@@ -14,6 +15,7 @@ const SuggestionSection = ({ title, list }) => {
             </Tag>
           ))
         : "nothing here :("}
+      <SpellsSection types={list} />
     </div>
   );
 };
