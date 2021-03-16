@@ -6,6 +6,9 @@ import ModalContent from "../modal-content/modal-content.component";
 
 import MONSTER_TYPES from "../../helper/monster-types";
 
+import "./list-item.styles.scss";
+import { DragonImageContainer } from "./list-item.styles.jsx";
+
 import { Modal } from "antd";
 
 const ListItem = ({ monster }) => {
@@ -20,9 +23,9 @@ const ListItem = ({ monster }) => {
           setShowModal(!showModal);
         }}
       >
-        <img
-          alt="monster"
-          src={`https://robohash.org/${name}.png?set=set4&size=100x100`}
+        <DragonImageContainer
+          color={MONSTER_TYPES[type]}
+          className="dragon-image"
         />
         {name}
         <Tag color={MONSTER_TYPES[type]}>{type}</Tag>
