@@ -15,6 +15,7 @@ const ListItem = ({ monster }) => {
   const { name, type } = monster;
   const [showModal, setShowModal] = useState(false);
 
+  // credit dragon image: Freepik (https://www.freepik.com/)
   return (
     <div>
       <Card
