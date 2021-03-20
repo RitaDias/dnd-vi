@@ -27,7 +27,7 @@ const ListItem = ({ monster }) => {
         }}
       >
         <DragonImageContainer
-          color={MONSTER_TYPES[type]}
+          color={MONSTER_TYPES[tagType]}
           className="dragon-image"
         />
         {name}
