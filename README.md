@@ -3,7 +3,7 @@
 This is a side project that when looking at a d&d monster will suggest good spells to fight against it.
 Used to refresh react and get a chance to use GraphQL and Hooks.
 
-![](./Assets/2.gif)
+!["List of Mosters with default image and chip. Opens a modal for spells that would work / not work against it"](./src/Assets/2.gif)
 
 # Is it finished?
 
