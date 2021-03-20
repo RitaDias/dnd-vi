@@ -1,7 +1,6 @@
 import SuggestionSection from "../suggestion-section/suggestion-section.component";
 
 const ModalContent = ({ currentOpenItem }) => {
-  console.log(currentOpenItem);
   const {
     name,
     damage_vulnerabilities,

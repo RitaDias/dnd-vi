@@ -14,6 +14,8 @@ import { Modal } from "antd";
 const ListItem = ({ monster }) => {
   const { name, type } = monster;
   const [showModal, setShowModal] = useState(false);
+  const tagLowerCase = type.toLowerCase();
+  const tagType = tagLowerCase.toLowerCase().replaceAll(" ", "-");
 
   // credit dragon image: Freepik (https://www.freepik.com/)
   return (
@@ -29,7 +31,7 @@ const ListItem = ({ monster }) => {
           className="dragon-image"
         />
         {name}
-        <Tag color={MONSTER_TYPES[type]}>{type}</Tag>
+        <Tag color={MONSTER_TYPES[tagType]}>{tagLowerCase}</Tag>
       </Card>
 
       <Modal
