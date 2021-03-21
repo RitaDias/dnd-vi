@@ -21,6 +21,7 @@ Here's a list of to dos more or less by order:
 - [ ] Add filter for spells types in modal
 - [ ] _Add a spells search in modal_
 - [ ] Renaming components to more closely match what they are
+- [ ] _Add memoisation in Modal Components_
 
 And here's a list of ideas that I think I will continue working on for the future!
 
