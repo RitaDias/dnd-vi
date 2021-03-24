@@ -22,6 +22,7 @@ Here's a list of to dos more or less by order:
 - [ ] _Add a spells search in modal_
 - [ ] Renaming components to more closely match what they are
 - [ ] _Add memoisation in Modal Components_
+- [ ] Look into windowing technics for the monster list
 
 And here's a list of ideas that I think I will continue working on for the future!
 
