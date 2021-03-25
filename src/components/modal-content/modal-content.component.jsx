@@ -10,7 +10,7 @@ const ModalContent = ({ currentOpenItem }) => {
 
   return (
     <div>
-      {name}
+      <h2>{name}</h2>
       <SuggestionSection
         title="Vulnerabilities"
         description="If a creature or an object has vulnerability to a damage type, damage of that type is doubled against it."

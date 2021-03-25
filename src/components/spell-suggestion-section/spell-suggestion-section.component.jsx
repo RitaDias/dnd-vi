@@ -5,7 +5,7 @@ import "./spell-suggestion-section.styles.scss";
 const SuggestionSection = ({ title, description, list }) => {
   return (
     <div className="suggestion-section">
-      <div className="title">{title}</div>
+      <h3>{title}</h3>
       <div className="description">{description}</div>
       <SpellsSection types={list} />
     </div>
