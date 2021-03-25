@@ -28,6 +28,10 @@ And here's a list of ideas that I think I will continue working on for the futur
 
 - When clicking a spell in the modal, open a modal focused on the spell. The lists that will be shown are monsters that have vunerabilities, immunities and resistances to the picked spell type.
 
+## Browser compatibility
+
+IE is a no-go :( 
+
 ## Available Scripts
 
 In the project directory, you can run:
