@@ -13,10 +13,19 @@ const ModalContent = ({ currentOpenItem }) => {
       {name}
       <SuggestionSection
         title="Vulnerabilities"
+        description="If a creature or an object has vulnerability to a damage type, damage of that type is doubled against it."
         list={damage_vulnerabilities}
       />
-      <SuggestionSection title="Resistances" list={damage_resistances} />
-      <SuggestionSection title="Immunities" list={damage_immunities} />
+      <SuggestionSection
+        title="Resistances"
+        description="If a creature or an object has resistance to a damage type, damage of that type is halved against it. "
+        list={damage_resistances}
+      />
+      <SuggestionSection
+        title="Immunities"
+        description="If a creature or an object has immunity to a damage type, damage of that type is completely avoided."
+        list={damage_immunities}
+      />
     </div>
   );
 };
