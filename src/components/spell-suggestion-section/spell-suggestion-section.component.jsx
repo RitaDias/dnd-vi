@@ -1,6 +1,6 @@
 import SpellsSection from "../spells-section/spells-section.component";
 
-import "./suggestion-section.styles.scss";
+import "./spell-suggestion-section.styles.scss";
 
 const SuggestionSection = ({ title, list }) => {
   return (

@@ -1,4 +1,4 @@
-import SuggestionSection from "../suggestion-section/suggestion-section.component";
+import SuggestionSection from "../spell-suggestion-section/spell-suggestion-section.component";
 
 const ModalContent = ({ currentOpenItem }) => {
   const {
