@@ -12,19 +12,25 @@ Here's a list of to dos more or less by order:
 
 - [ ] Write basic unit tests
 - [ ] Add Loading animation (on first load)
-- [ ] Add empty state for when no spells are on the list (image)
 - [ ] Fix background color (so that it occupies the whole screen on loading)
-- [ ] Add a search for Monster
-- [ ] Add a filter for Monster Type
 - [ ] Add empty state for when no spells are on the list (image)
 - [ ] Add loading animation (for spells fetching)
+- [ ] Make design for spell card more consistent (fix the names that spill into two lines)
+- [ ] Add a search for Monster
+- [ ] Add a filter for Monster Type
 - [ ] Add filter for spells types in modal
 - [ ] _Add a spells search in modal_
 - [ ] Renaming components to more closely match what they are
+- [ ] _Add memoisation in Modal Components_
+- [ ] Look into windowing technics for the monster list
 
 And here's a list of ideas that I think I will continue working on for the future!
 
 - When clicking a spell in the modal, open a modal focused on the spell. The lists that will be shown are monsters that have vunerabilities, immunities and resistances to the picked spell type.
+
+## Browser compatibility
+
+IE is a no-go :( 
 
 ## Available Scripts
 
