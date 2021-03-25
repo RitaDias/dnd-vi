@@ -1,13 +1,11 @@
-import "./list-item.styles.scss";
-
 import { useState } from "react";
 import { Card, Tag } from "antd";
 import ModalContent from "../modal-content/modal-content.component";
 
 import MONSTER_TYPES from "../../helper/monster-types";
 
-import "./list-item.styles.scss";
-import { DragonImageContainer } from "./list-item.styles.jsx";
+import "./monster-item.styles.scss";
+import { DragonImageContainer } from "./monster-item.styles.jsx";
 
 import { Modal } from "antd";
 

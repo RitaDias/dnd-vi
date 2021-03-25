@@ -1,4 +1,4 @@
-import ListItem from "../list-item/list-item.component";
+import ListItem from "../monster-item/monster-item.component";
 
 import "./monster-list.styles.scss";
 
