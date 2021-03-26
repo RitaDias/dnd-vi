@@ -20,7 +20,7 @@ Here's a list of to dos more or less by order:
 - [ ] Add a filter for Monster Type
 - [ ] Add filter for spells types in modal
 - [ ] _Add a spells search in modal_
-- [ ] Renaming components to more closely match what they are
+- [X] Renaming components to more closely match what they are
 - [ ] _Add memoisation in Modal Components_
 - [ ] Look into windowing technics for the monster list
 
