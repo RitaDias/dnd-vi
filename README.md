@@ -12,8 +12,8 @@ Here's a list of to dos more or less by order:
 
 - [ ] Write basic unit tests
 - [ ] Add Loading animation (on first load)
-- [ ] Fix background color (so that it occupies the whole screen on loading)
-- [ ] Add empty state for when no spells are on the list (image)
+- [X] Fix background color (so that it occupies the whole screen on loading)
+- [X] Add empty state for when no spells are on the list (image)
 - [ ] Add loading animation (for spells fetching)
 - [ ] Make design for spell card more consistent (fix the names that spill into two lines)
 - [ ] Add a search for Monster
